@@ -1,8 +1,8 @@
-import { FC } from "react";
+import { FC, ReactNode } from "react";
 import { View, Text, Pressable, StyleSheet } from "react-native";
 
 const PrimaryButton: FC<{
-  children?: React.ReactNode;
+  children?: ReactNode;
   onPress?: () => void;
 }> = (props) => {
   return (
