@@ -5,7 +5,7 @@ import Colors from "../../constants/colors";
 
 const PrimaryButton: FC<{
   children?: ReactNode;
-  onPress?: () => void;
+  onPress?: any;
 }> = (props) => {
   return (
     <View style={styles.buttonOuterContainer}>
