@@ -19,7 +19,7 @@ const GameOverScreen: FC<{
         />
       </View>
       <Text style={styles.summaryText}>
-        Your phone need <Text style={styles.highlight}>{rounds}</Text> rounds to guess
+        Your phone needed <Text style={styles.highlight}>{rounds}</Text> rounds to guess
         the number <Text style={styles.highlight}>{userNumber}</Text>
       </Text>
       <PrimaryButton onPress={onStartNewGame}>Start New Game</PrimaryButton>
