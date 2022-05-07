@@ -21,9 +21,10 @@ function generateRandomBetween(min: number, max: number, exclude: number) {
 let minBoundary = 1;
 let maxBoundary = 100;
 
-const GameScreen: FC<{ userNumber: number; onGameOver: (numberOfRounds: number) => void }> = (
-  props
-) => {
+const GameScreen: FC<{
+  userNumber: number;
+  onGameOver: (numberOfRounds: number) => void;
+}> = (props) => {
   const initialGuess = generateRandomBetween(
     1,
     100,
@@ -111,6 +112,7 @@ export default GameScreen;
 const styles = StyleSheet.create({
   screen: {
     padding: 24,
+    alignItems: "center",
   },
   InstructionText: {
     marginBottom: 12,
